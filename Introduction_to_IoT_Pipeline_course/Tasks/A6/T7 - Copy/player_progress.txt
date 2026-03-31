@@ -1,0 +1,14 @@
+current_location;next_location;passphrase
+0;1;qvfpvcyvar
+ 
+1;2;qvfpvcyvar
+
+
+2;3;nzovgvba
+
+
+3;4;vapyhqvat
+
+
+4;5;vapyhqvat
+

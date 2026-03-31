@@ -1,0 +1,64 @@
+{
+    "2024-11-17 00:05:25": [
+        {
+            "Date": "2024-09-30",
+            "Time": "08:27:00",
+            "CPU temp (Fahrenheit)": 122.18,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:27:17",
+            "CPU temp (Fahrenheit)": 121.28,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:27:34",
+            "CPU temp (Fahrenheit)": 119.66,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:27:51",
+            "CPU temp (Fahrenheit)": 120.38,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:28:08",
+            "CPU temp (Fahrenheit)": 118.76,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:28:25",
+            "CPU temp (Fahrenheit)": 119.66,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:28:41",
+            "CPU temp (Fahrenheit)": 120.38,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:28:58",
+            "CPU temp (Fahrenheit)": 119.66,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:29:15",
+            "CPU temp (Fahrenheit)": 118.76,
+            "Status": "Movement detected: YES"
+        },
+        {
+            "Date": "2024-09-30",
+            "Time": "08:29:32",
+            "CPU temp (Fahrenheit)": 119.66,
+            "Status": "Movement detected: YES"
+        }
+    ]
+}

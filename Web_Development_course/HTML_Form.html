@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Form</title>
+</head>
+<body>
+    <form>  
+        <fieldset style="width:423px">
+            <legend>Contact information:</legend>
+            <table>
+                <tr>
+                    <td><input type="text" id="fname" name="fname" placeholder="First name"></td> 
+                    <td rowspan="3" style="vertical-align: top;">
+                        <label>Preferred contact method:</label><br>
+                        <input type="checkbox" name="preferred_contact">
+                        <label for="email_contact">Email</label><br>
+                        <input type="checkbox" id="tel_contact" name="preferred_contact" value="Telephone">
+                        <label for="tel_contact">Telephone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="lname" name="lname" placeholder="Last name"></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="email" name="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><input type="tel" id="tel" name="tel" placeholder="Telephone"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset style="width:423px">
+            <legend>Feedback:</legend>
+            <input type="text" id="subject" name="subject" placeholder="Message subject"><br><br>
+            <textarea name="message" rows="15" cols="50"></textarea><br><br>
+            <label>Attach a file:</label> <input type="file"> <br> <br>
+            <hr style="height: 2px">
+            <br>
+            <input type="submit" id="fname" name="fname" value="Send"><br>
+        </fieldset>
+    </form>
+</body>
+</html>

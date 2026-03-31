@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .calculator {
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 5px;
+            width: 50px;
+        }
+        select {
+            padding: 5px;
+            height: 29px;
+        }
+        button {
+            margin-left: 4px;
+            height: 29px;
+            width: 30px;
+            position: fixed;
+        }
+        span{
+            padding-left: 50px;
+        }
+        .arrow-btn {
+            padding: 5px;
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+        .Secondnum{
+            margin-left: 34px;
+        }
+        .secondop{
+            margin-left: 33px;
+        }
+        .Secondnum2{
+            margin-left: 33px;
+        }
+        .secondeq{
+            margin-left: 38px;
+        }
+        .arrow-btn2{
+            margin-left: 4px;
+        }
+        .result2 {
+            margin-left: 30px;
+        }
+        .num5 {
+            width: 200px;
+        }
+        .op3{
+            margin-top: 15px;
+        }
+        .op4{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Calculator with text box and drop down list</h3>
+        <input type="number" id="num1" />
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="num2" />
+        <button onclick="calculate()">=</button>
+        <span class="result" id="result"></span><br>   
+    </div>
+    <div>
+        <h3>Calculator with text box and increment/ decrement buttons</h3>
+        <button class="arrow-btn" id="decrease1" onclick="DecreaseValue('num3')">▼</button>
+        <input class="Secondnum" type="text" id="num3" value="0" />
+        <button class="arrow-btn" id="increase1" onclick="IncreaseValue('num3')">▲</button>
+        <select class="secondop" id="operation2">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button class="arrow-btn" id="decrease2" onclick="DecreaseValue('num4')">▼</button>
+        <input class="Secondnum2" type="text" id="num4" value="0" />
+        <button class="arrow-btn2" id="increase2" onclick="IncreaseValue('num4')">▲</button>
+        <button class="secondeq" onclick="calculate2()">=</button>
+        <span class="result2" id="result2"></span><br>
+    </div>
+    <div>
+        <h3>Calculator with text box and option</h3>
+        <input class="num5" type="text" id="num5"/><br>
+        <input class="op3" type="radio" name="operation3" value="+">
+        <label for="operation3">Addition</label><br>
+        <input type="radio" name="operation3" value="-">
+        <label for="operation3">Subtraction</label><br>
+        <input type="radio" name="operation3" value="*">
+        <label for="operation3">Multiplication</label><br>
+        <input class="op4" type="radio" name="operation3" value="/">
+        <label for="operation3">Division</label><br>
+        <input class="num5" type="text" id="num6"/>
+        <button onclick="calculate3()">=</button>
+        <span class="result3" id="result3"></span><br> 
+    </div>
+</body>
+<script>
+    function calculate() {
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+        const operation = document.getElementById('operation').value;
+        let result = '';
+
+        if (isNaN(num1) || isNaN(num2)) {
+            result = "Enter valid numbers";
+        } else {
+            if (operation === '+') {
+                result = num1 + num2;
+            } else if (operation === '-') {
+                result = num1 - num2;
+            } else if (operation === '*') {
+                result = num1 * num2;
+            } else if (operation === '/') {
+                if (num2 === 0) {
+                    result = "Cannot divide number by 0";
+                } else {
+                    result = num1 / num2;
+                }
+            }
+        }
+        document.getElementById('result').innerHTML = "Result: " + result;
+    }
+
+    function calculate2() {
+        const num3 = parseFloat(document.getElementById('num3').value);
+        const num4 = parseFloat(document.getElementById('num4').value);
+        const operation2 = document.getElementById('operation2').value;
+        let result2 = '';
+
+        if (isNaN(num3) || isNaN(num4)) {
+            result2 = "Enter valid numbers";
+        } else {
+            if (operation2 === '+') {
+                result2 = num3 + num4;
+            } else if (operation2 === '-') {
+                result2 = num3 - num4;
+            } else if (operation2 === '*') {
+                result2 = num3 * num4;
+            } else if (operation2 === '/') {
+                if (num4 === 0) {
+                    result2 = "Cannot divide number by 0";
+                } else {
+                    result2 = num3 / num4;
+                }
+            }
+        }
+        document.getElementById('result2').innerHTML = "Result: " + result2;
+    }
+
+    function IncreaseValue(inputId) {
+        const input = document.getElementById(inputId);
+        input.value = parseFloat(input.value) + 1;
+    }
+
+    function DecreaseValue(inputId) {
+        const input = document.getElementById(inputId);
+        input.value = parseFloat(input.value) - 1;
+    }
+
+    function calculate3() {
+        const num5 = parseFloat(document.getElementById('num5').value);
+        const num6 = parseFloat(document.getElementById('num6').value);
+        const operation3 = document.querySelector('input[name="operation3"]:checked').value;
+        let result3 = '';
+
+        if (isNaN(num5) || isNaN(num6)) {
+            result3 = "Enter valid numbers";
+        } else {
+            if (operation3 === '+') {
+                result3 = num5 + num6;
+            } else if (operation3 === '-') {
+                result3 = num5 - num6;
+            } else if (operation3 === '*') {
+                result3 = num5 * num6;
+            } else if (operation3 === '/') {
+                if (num6 === 0) {
+                    result3 = "Cannot divide number by 0";
+                } else {
+                    result3 = num5 / num6;
+                }
+            }
+        }
+        document.getElementById('result3').innerHTML = "Result: " + result3;
+    }
+</script>
+</html>
+
+
+    
+
+
+    

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+
+  <!-- Inline CSS for styling -->
+  <style>
+    /* Basic body styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* iPhone frame styling */
+    .iphone-frame {
+      width: 300px;
+      height: 600px;
+      background-color: #333;
+      border-radius: 40px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Screen styling */
+    .screen {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 30px;
+      padding: 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    /* Game container styling inside the iPhone frame */
+    #game-container {
+      text-align: center;
+      max-width: 240px;
+      margin: auto;
+    }
+
+    /* Input and button styling for a cleaner mobile look */
+    input[type="text"] {
+      padding: 8px;
+      width: 100%;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    /* Message styling */
+    #message {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    /* iPhone details (optional) - for aesthetic only */
+    .iphone-frame::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 5px;
+      background: #666;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="iphone-frame">
+  <div class="screen">
+    <div id="game-container">
+      <h2>Guess the Number (1-100)</h2>
+      <p>You have 5 tries.</p>
+      <input type="text" id="guess-input" placeholder="Your guess">
+      <button onclick="makeGuess()">Guess</button>
+      <div id="message"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Inline JavaScript for functionality -->
+<script>
+  // Define game variables
+  const maxTries = 5;
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  let tries = 0;
+
+  function makeGuess() {
+    const guessInput = document.getElementById("guess-input");
+    const message = document.getElementById("message");
+    const guess = parseInt(guessInput.value);
+
+    // Check if input is a valid number between 1 and 100
+    if (isNaN(guess) || guess < 1 || guess > 100) {
+      // Display an error message if the input is not a valid number
+      message.textContent = "Enter only numbers between 1-100.";
+      guessInput.value = "";
+      guessInput.focus();
+      return;
+    }
+
+    tries++;
+
+    if (guess === randomNumber) {
+      message.textContent = `Correct! You guessed it in ${tries} tries.`;
+      disableGame(); // Disable further guesses if the player wins
+    } else if (guess < randomNumber) {
+      message.textContent = `Too low. Tries left: ${maxTries - tries}`;
+    } else {
+      message.textContent = `Too high. Tries left: ${maxTries - tries}`;
+    }
+
+    if (tries >= maxTries && guess !== randomNumber) {
+      message.textContent = `Game over. The number was ${randomNumber}.`;
+      disableGame(); // Disable further guesses if the player loses
+    }
+
+    guessInput.value = "";
+    guessInput.focus();
+  }
+
+  function disableGame() {
+    document.getElementById("guess-input").disabled = true;
+    document.querySelector("button").disabled = true;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide to Grid Layout</title>
+    <style>
+        .container {
+            padding: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .grid-item {
+            background-color: #282d30;
+            color: rgb(255, 255, 255);
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 25px 0;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Grid Layout</h1>
+    <h3>My home Town</h3>
+    <p>Places to visit:<p>
+</header>
+
+<div class="container">
+    <section class="grid-section">   
+        <div class="grid-container">
+            <div class="grid-item">SukhBaatar Square</div>
+            <div class="grid-item">Genghis Khan Museum</div>
+            <div class="grid-item">Zaisan Hill</div>
+            <div class="grid-item">Mongolian University of Science and Technology</div>
+            <div class="grid-item">Gandan Monastery</div>
+        </div>
+<section> 
+    <img src= "https://github.com/user-attachments/assets/979255f9-7bb0-4d0f-a565-92c96b8fcf18">
+</section>
+<p> CSS Grid is 2-dimensional system for creating web layouts. Grid allows arrangement of items into rows and columns.</p>
+<p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+<p>Items are arranged in a grid and have a minimium width, also they adjusts to screen size, making sure that grid items fit as many as possible rows.</p>
+</body>
+</html>

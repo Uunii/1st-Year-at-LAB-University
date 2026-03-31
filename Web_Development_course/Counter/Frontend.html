@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8 - Loop</title>
+</head>
+<body>
+    
+    <h3>Calculate Factorial</h3>
+    <label for="factorialInput">Enter a number:</label>
+    <input type="number" id="factorialInput" min="-100" max="100">
+    <button onclick="Factorial()">Calculate</button>
+    <p id="factorialResult"></p>
+    
+    <h3>Calculate Sum of Digits</h3>
+    <label for="sumInput">Enter a number:</label>
+    <input type="number" id="sumInput">
+    <button onclick="Digits()">Calculate</button>
+    <p id="sumResult"></p>
+    
+    <h3>Calculate Sum of Odd and Even Numbers</h3>
+    <label for="oddEvenInput">Enter a number:</label>
+    <input type="number" id="oddEvenInput">
+    <button onclick="OddEven()">Calculate</button>
+    <p id="oddEvenResult"></p>
+    
+    <script>
+        function factorial(N) {
+            if (N < 1) {
+                return "Unspecified";
+            }
+            
+            let result = 1;
+            for (let i = 1; i <= N; i++) {
+                result *= i;
+            }
+            
+            return result;
+        }
+
+        function sumOfDigits(number) {
+            let sum = 0;
+            const digits = number.toString();
+            for (let digit of digits) {
+                sum += parseInt(digit);
+            }
+            return sum;
+        }
+
+        function Factorial() {
+            const input = document.getElementById("factorialInput").value;
+            const N = parseInt(input);
+            
+            if (isNaN(N)) {
+                document.getElementById("factorialResult").textContent = "Invalid input. Please enter a number.";
+            } else {
+                const factorialResult = factorial(N);
+                document.getElementById("factorialResult").textContent = `Factorial Result: ${factorialResult}`;
+            }
+        }
+
+        function Digits() {
+            const input = document.getElementById("sumInput").value;
+            const number = parseInt(input);
+            
+            if (isNaN(number)) {
+                document.getElementById("sumResult").textContent = "Invalid input. Please enter a number.";
+            } else {
+                const digitSum = sumOfDigits(number);
+                document.getElementById("sumResult").textContent = `Sum of Digits: ${digitSum}`;
+            }
+        }
+
+        function OddEven() {
+            const input = document.getElementById("oddEvenInput").value;
+            const N = parseInt(input);
+            
+            if (isNaN(N) || N < 1) {
+                document.getElementById("oddEvenResult").textContent = "Invalid input. Please enter a positive number.";
+            } else {
+                let sumOdd = 0;
+                let sumEven = 0;
+                
+                for (let i = 1; i <= N; i++) {
+                    if (i % 2 === 0) {
+                        sumEven += i;
+                    } else {
+                        sumOdd += i;
+                    }
+                }
+                
+                document.getElementById("oddEvenResult").textContent = 
+                    `Sum of Odd Numbers: ${sumOdd}, Sum of Even Numbers: ${sumEven}`;
+            }
+        }
+    </script>
+</body>
+</html>

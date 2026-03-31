@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish ID Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            text-align: left;
+        }
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        #output1, #output2, #output3 {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            width: 280px;
+            margin-top: 10px;
+        }
+        .valid {
+            color: green;
+            background-color: #e0f7e0;
+        }
+        .invalid {
+            color: red;
+            background-color: #f8d7da;
+        }
+    </style>
+    <script>
+        function Checker() {
+            const userInput = document.getElementById("userInput").value;
+            const first6 = userInput.substring(0, 6);
+            const random3 = userInput.substring(7, 10);
+            const combined = (first6 + random3);
+            const remainder = (combined % 31);
+            const f_or_m = (random3 % 2);
+            const last = userInput.slice(-1);
+            const agechecker = userInput.substring(6, 7);
+            const year = userInput.substring(4, 6);
+            // const month = userinput.substring(0, 3)
+            // const day = user.input.substring(3, 5)
+            
+            let lastdigit;
+            if (remainder === 0) {
+                lastdigit = "0";
+            } else if (remainder === 1) {
+                lastdigit = "1";
+            } else if (remainder === 2) {
+                lastdigit = "2";
+            } else if (remainder === 3) {
+                lastdigit = "3";
+            } else if (remainder === 4) {
+                lastdigit = "4";
+            } else if (remainder === 5) {
+                lastdigit = "5";
+            } else if (remainder === 6) {
+                lastdigit = "6";
+            } else if (remainder === 7) {
+                lastdigit = "7";
+            } else if (remainder === 8) {
+                lastdigit = "8";
+            } else if (remainder === 9) {
+                lastdigit = "9";
+            } else if (remainder === 10) {
+                lastdigit = "A";
+            } else if (remainder === 11) {
+                lastdigit = "B";
+            } else if (remainder === 12) {
+                lastdigit = "C";
+            } else if (remainder === 13) {
+                lastdigit = "D";
+            } else if (remainder === 14) {
+                lastdigit = "E";
+            } else if (remainder === 15) {
+                lastdigit = "F";
+            } else if (remainder === 16) {
+                lastdigit = "H";
+            } else if (remainder === 17) {
+                lastdigit = "J";
+            } else if (remainder === 18) {
+                lastdigit = "K";
+            } else if (remainder === 19) {
+                lastdigit = "L";
+            } else if (remainder === 20) {
+                lastdigit = "M";
+            } else if (remainder === 21) {
+                lastdigit = "N";
+            } else if (remainder === 22) {
+                lastdigit = "P";
+            } else if (remainder === 23) {
+                lastdigit = "R";
+            } else if (remainder === 24) {
+                lastdigit = "S";
+            } else if (remainder === 25) {
+                lastdigit = "T";
+            } else if (remainder === 26) {
+                lastdigit = "U";
+            } else if (remainder === 27) {
+                lastdigit = "V";
+            } else if (remainder === 28) {
+                lastdigit = "W";
+            } else if (remainder === 29) {
+                lastdigit = "X";
+            } else if (remainder === 30) {
+                lastdigit = "Y";
+            }
+
+            let valid;
+            if (lastdigit === last) {
+                valid = "True";
+                let sex;
+                if (f_or_m === 1) {
+                    sex = "Male";
+                } else if (f_or_m === 0) {
+                    sex = "Female";
+                } else {
+                    sex = "N/A";
+                }
+
+                let bornyear;
+                if (agechecker === "-") {
+                    bornyear = 19 + year;
+                } else if (agechecker === "+") {
+                    bornyear = 18 + year;
+                } else if (agechecker === "A") {
+                    bornyear = 20 + year;
+                } else {
+                    age = "N/A";
+                }
+                let age;
+                if (bornyear >= 2024) {
+                    age = "N/A";
+                } else {
+                    age = 2024 - bornyear;
+                }
+                
+                document.getElementById("output2").innerText = `Sex: ${sex}`;
+                document.getElementById("output3").innerText = `Age: ${age}`;
+                document.getElementById("output1").innerText = `ID is valid: ${valid}`;
+                document.getElementById("output1").classList.add("valid");
+                document.getElementById("output1").classList.remove("invalid");
+            } else {
+                valid = "False";
+                document.getElementById("output2").innerText = "";
+                document.getElementById("output3").innerText = "";
+                document.getElementById("output1").innerText = `ID is valid: ${valid}`;
+                document.getElementById("output1").classList.add("invalid");
+                document.getElementById("output1").classList.remove("valid");
+            }
+        }
+
+        function Generate() {
+            const userInput1 = document.getElementById("generate").value;
+            const first6 = userInput1.substring(0, 6);
+            const random3 = userInput1.substring(7, 10);
+            const combined = (first6 + random3);
+            const remainder = (combined % 31);
+            let lastdigit;
+            
+            if (remainder === 0) {
+                lastdigit = "0";
+            } else if (remainder === 1) {
+                lastdigit = "1";
+            } else if (remainder === 2) {
+                lastdigit = "2";
+            } else if (remainder === 3) {
+                lastdigit = "3";
+            } else if (remainder === 4) {
+                lastdigit = "4";
+            } else if (remainder === 5) {
+                lastdigit = "5";
+            } else if (remainder === 6) {
+                lastdigit = "6";
+            } else if (remainder === 7) {
+                lastdigit = "7";
+            } else if (remainder === 8) {
+                lastdigit = "8";
+            } else if (remainder === 9) {
+                lastdigit = "9";
+            } else if (remainder === 10) {
+                lastdigit = "A";
+            } else if (remainder === 11) {
+                lastdigit = "B";
+            } else if (remainder === 12) {
+                lastdigit = "C";
+            } else if (remainder === 13) {
+                lastdigit = "D";
+            } else if (remainder === 14) {
+                lastdigit = "E";
+            } else if (remainder === 15) {
+                lastdigit = "F";
+            } else if (remainder === 16) {
+                lastdigit = "H";
+            } else if (remainder === 17) {
+                lastdigit = "J";
+            } else if (remainder === 18) {
+                lastdigit = "K";
+            } else if (remainder === 19) {
+                lastdigit = "L";
+            } else if (remainder === 20) {
+                lastdigit = "M";
+            } else if (remainder === 21) {
+                lastdigit = "N";
+            } else if (remainder === 22) {
+                lastdigit = "P";
+            } else if (remainder === 23) {
+                lastdigit = "R";
+            } else if (remainder === 24) {
+                lastdigit = "S";
+            } else if (remainder === 25) {
+                lastdigit = "T";
+            } else if (remainder === 26) {
+                lastdigit = "U";
+            } else if (remainder === 27) {
+                lastdigit = "V";
+            } else if (remainder === 28) {
+                lastdigit = "W";
+            } else if (remainder === 29) {
+                lastdigit = "X";
+            } else if (remainder === 30) {
+                lastdigit = "Y";
+            }else{
+                lastdigit = "N/A"
+            }
+
+            document.getElementById("result").innerText = `Last digit: ${lastdigit}`;
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <h2>Check ID</h2>
+    <label for="userInput">Enter the Finnish ID you want to check.</label><br><br>
+    <input type="text" id="userInput" maxlength="11">
+    <button onclick="Checker()">Check</button>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+    </div>
+    <div>
+    <h2>Create ID</h2>
+    <label for="generate">Enter initial part of the ID.</label><br><br>
+    <input type="text" id="generate" maxlength="10">
+    <button onclick="Generate()">Generate</button>
+    <p id="result"></p>
+    </div>
+</body>
+</html>

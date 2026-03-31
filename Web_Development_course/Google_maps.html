@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 - Google maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        iframe {
+            width: 700px;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Task - 7 Google Maps</h1>
+        
+        <label for="street">Street:</label>
+        <input type="text" id="street" placeholder="Enter street name">
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" placeholder="Enter city name">
+        
+        <button onclick="searchLocation()">Search</button>
+    </div>
+
+    <iframe
+        id="mapFrame"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCv9XYzzMCzxrqZITtqYSmOWVAG-jTT29E&q=Lahti"
+        allowfullscreen>
+    </iframe>
+
+    <script>
+        function searchLocation() {
+            const street = document.getElementById("street").value;
+            const city = document.getElementById("city").value;
+
+            if (street && city) {
+                const query = encodeURIComponent(`${street}, ${city}`);
+                const mapFrame = document.getElementById("mapFrame");
+                
+                mapFrame.src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCv9XYzzMCzxrqZITtqYSmOWVAG-jTT29E&q=${query}`;
+            } else {
+                alert("Please enter both street and city.");
+            }
+        }
+    </script>
+
+</body>
+</html>

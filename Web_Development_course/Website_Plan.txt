@@ -1,0 +1,20 @@
+My name is Unubold Luvsandagva. 
+I am currently studying in Lab University of Applied Science as Industrial IT engineer.
+And followings below are my plan for my webpage.
+
+1.My planning Website Goals: 
+	- To help tourists to find places to visit in my home country (Mongolia) such as memorable places or constructions.
+
+2.Target audience:
+	- Mostly Foreign tourists who visiting Mongolia as well as local tourists who willing to explore their country more.
+
+3.Content type:
+	- Mostly pictures of the places with brief introduction of the location such as location etc.
+
+4.Features (Expected user interactions):
+	- You can search what kind of places you are planning to visit and the website will give you suggestions based on your 
+	  preferences, such as distance from you or is it natural place or constructions.
+	- Interactable map that shows users current location and if the user choose their next destination, the maps can show 
+	  directions to that destination.
+	- Users can leave review on places so that other travelers can read the review.	
+

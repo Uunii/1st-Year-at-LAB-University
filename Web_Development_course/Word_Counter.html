@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 9 String handling</title>
+</head>
+<body>
+
+    <h2>Task 1: Count "L" Letters</h2>
+    <input type="text" id="task1Input" placeholder="Enter a word or phrase">
+    <button onclick="countL()">Count L's</button>
+    <div id="task1Result" class="result"></div>
+
+    <h2>Task 2: Count Vowels</h2>
+    <input type="text" id="task2Input" placeholder="Enter a word or phrase">
+    <button onclick="countVowel()">Count Vowels</button>
+    <div id="task2Result" class="result"></div>
+
+    <h2>Task 3: Check Palindrome</h2>
+    <input type="text" id="task3Input" placeholder="Enter a word or phrase">
+    <button onclick="Palindrome()">Check Palindrome</button>
+    <div id="task3Result" class="result"></div>
+
+    <script>
+        function countL() {
+            const input = document.getElementById("task1Input").value;
+            const lCount = (input.match(/l/gi)).length;
+            document.getElementById("task1Result").textContent =`"${input}" contains ${lCount} L characters.`;
+        }
+
+        function countVowel() {
+            const input = document.getElementById("task2Input").value;
+            const vowelsCount = (input.match(/[aeiouyåäö]/gi)).length;
+            document.getElementById("task2Result").textContent =`"${input}" contains ${vowelsCount} vowels.`;
+        }
+
+        function Palindrome() {
+            const input = document.getElementById("task3Input").value;
+            const inputlow = input.replace(/[^a-zA-Z0-9]/g).toLowerCase();
+            const isPalindrome = inputlow === inputlow.split("").reverse().join("");
+            document.getElementById("task3Result").textContent =`"${input}" is ${isPalindrome ? "" : "NOT "}a palindrome.`;
+        }
+    </script>
+</body>
+</html>

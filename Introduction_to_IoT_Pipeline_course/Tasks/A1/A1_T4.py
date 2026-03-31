@@ -1,0 +1,9 @@
+num1=47 
+num2=102
+sum = sum([num1, num2])
+difference = num2 - num1
+print(num1, "+", num2, "=", sum)
+print(num2, "-", num1, "=",difference)
+product= sum * difference
+print(sum, "*", difference,"=", product)
+print("(",num1, "+", num2, ")","*", "(", num2, "-", num1, ")", "=" , product)

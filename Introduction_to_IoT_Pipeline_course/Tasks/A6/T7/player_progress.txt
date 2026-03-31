@@ -1,0 +1,5 @@
+current_location;next_location;passphrase
+0;1;qvfpvcyvar
+ 
+1;2;qvfpvcyvar
+

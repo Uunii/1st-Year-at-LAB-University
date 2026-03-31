@@ -1,0 +1,58 @@
+[
+    {
+        "First name": "Unubold",
+        "Last name": "Luvsandagva",
+        "User ID": "UnLuv19990611",
+        "username": "Uunii",
+        "password": "RickandRoll",
+        "User rights": "Admin"
+    },
+    {
+        "First name": "Mira",
+        "Last name": "Vorne",
+        "User ID": "MiVor19990611",
+        "username": "Mira",
+        "password": "VorneLAB",
+        "User rights": "Super-user"
+    },
+    {
+        "First name": "Rick",
+        "Last name": "Astley",
+        "User ID": "RiAst19701111",
+        "username": "Rick",
+        "password": "yougotricked",
+        "User rights": "viewer"
+    },
+    {
+        "First name": "John",
+        "Last name": "Snow",
+        "User ID": "JoSno19901111",
+        "username": "Snowman",
+        "password": "12345",
+        "User rights": "viewer"
+    },
+    {
+        "First name": "Dude",
+        "Last name": "Perfect",
+        "User ID": "DuPer20001111",
+        "username": "Perfect",
+        "password": "MRperfect",
+        "User rights": "viewer"
+    },
+    {
+        "First name": "Mister",
+        "Last name": "Bean",
+        "User ID": "MiBea19901111",
+        "username": "Beans",
+        "password": "qwerty",
+        "User rights": "viewer"
+    },
+    {
+        "First name": "Peter",
+        "Last name": "Parker",
+        "User ID": "PePar19991111",
+        "username": "Spiderman",
+        "password": "ManSpider",
+        "User rights": "viewer"
+    }
+]
