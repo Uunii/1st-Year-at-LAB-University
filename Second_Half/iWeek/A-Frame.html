@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="wdth=device-width, initial-scale=1.0">
+    <title>A-Frame</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+
+    <a-assets>
+        <img id="wood_texture" src="Wood Texture.jpg">
+        <img id="forest" src="Forest.jpg">
+    </a-assets>
+    
+
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 90 0" src="#wood_texture"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.5" color="#EF2D5E"></a-sphere>
+      <a-cylinder 
+
+      animation="property: position; to: 0 0.75 -3; dur: 3000; easing: linear; loop: true; dir: alternate"
+      
+      position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky src="#forest" ></a-sky>
+
+      <a-text value="Hello user" position="-2 2 -4"></a-text>
+    </a-scene>
+
+  </body>
+
+</html>

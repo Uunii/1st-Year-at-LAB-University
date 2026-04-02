@@ -1,0 +1,51 @@
+Ground rules
+10 design principles for VR
+5 x Basics & 5 x Immersion
+
+Base rule 1: CURSOR
+- Accessible, easy to implement and understand
+- Unobtrusive... but not too much
+- Later also possible to combine with Fuse
+
+Base rule 2: Interface depth
+-In 3D, there's more to consider than just pixels
+-Take distnace, contrast, and lighting into account
+
+Base rile 3: Constant speed
+- Avoid varying speeds in motion
+- Constant speed is desired
+- You don't wat a rollercoaster effect
+
+Base rule 4: Ground the user
+- Use a fixed point in VR world
+- Make it clear what is 'stationary' and what is 'moving'
+
+Base rule 5: Constant tracking
+- Most important part
+- There are various types of tracking, Degree of Freedom (DOF)
+- Most simple VR headset hace 3DOF
+- ^DOF is possible with (external) head tracking
+
+Immersion 1: Lighting
+- Users look at the brightest point
+- Just like with traditional design
+- Subtle way to draw attention
+- Can be done easily in A-Frame
+
+Immersion 2: Usage of scale
+- Large object really appear BIG
+- Use the advantage compared to 3D
+
+Immersion 3: Spatial audio
+- Adds an extra layer of experience to 3D
+- Works well in A-Frame
+- Preferably with headphones
+
+Immersion 4: Sightlines
+- You always know where is your user is looking, take advantage of that
+- Sometimes the user doesn't look where you want
+
+Immersion 5: Make it beautiful
+- It remains an illusion; you dont't want to break it
+- Pay attention to details; this makes a concept more beautiful
+- Keep your style consistent. Don't mix hyper-real with cartoon

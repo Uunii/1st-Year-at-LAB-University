@@ -435,7 +435,7 @@ def RockPaperScissors():
             playing = False
         else:
             print("Invalid choice!")
-    print(f"\nPlayer - wins ({player_scoreboard["wins"]}), losses ({player_scoreboard["losses"]}), draws ({player_scoreboard["draws"]})")
+    print(f"\nPlayer - wins ({player_scoreboard['wins']}), losses ({player_scoreboard['losses']}), draws ({player_scoreboard['draws']})")
     print("Thanks for playing.")
 def LoginMenu():
     print(Fore.BLUE,Style.BRIGHT,"\n_______________________________________________")
