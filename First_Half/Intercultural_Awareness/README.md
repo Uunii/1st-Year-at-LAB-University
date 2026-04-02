@@ -1,1 +1,3 @@
+# First year at LAB University. (2024 Autumn)
+
 For me, We had best lecturer in this course, his stories, how he explain things, how he uses those stories as a example was so awesome. In this course our team goal was make a presentation about cultural differences between 2 whole different countries. We chose France and Thailand.
