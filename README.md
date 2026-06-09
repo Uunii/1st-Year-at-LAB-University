@@ -1,6 +1,6 @@
 # 🎓 1st Year at LAB University of Applied Sciences (2024–2025)
 
-> A Mongolian civil engineer walks into a Finnish IT degree. No punchline — this is just my life now. 🇲🇳➡️🇫🇮
+> A Mongolian civil engineer walks into a Finnish IT degree. 🇲🇳➡️🇫🇮
 
 This repo is a snapshot of everything I did, learned, built, and survived during my first year studying **Industrial Information Technology** at LAB University of Applied Sciences, Lahti, Finland.
 
@@ -30,8 +30,8 @@ English for the workplace — writing, communicating, presenting. Useful stuff, 
 Honestly one of the most interesting courses. LAB is super international, so learning how to communicate across cultures is actually practical — not just theory.
 
 ### 🇫🇮 Finnish 1 & 2
-*Hei! Miten menee?*
-That's about as far as I got, but hey — it's a start. Finnish is no joke.
+*Hei! Mina olen Uunii*
+That's about as far as I got, ofcourse learning curse words were much easier :)
 
 ---
 
@@ -44,7 +44,7 @@ The big one from 1st year. A Python console app that:
 - 🔐 **Admin vs regular user** roles — only admins can touch the important stuff
 - 📊 Displays the latest sensor readings straight to the console
 
-It's not pretty (it's a console app 😅) but it works, and I built the whole thing myself.
+It's not pretty (it's a console app) but it works
 
 ---
 
@@ -54,17 +54,6 @@ It's not pretty (it's a console app 😅) but it works, and I built the whole th
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![ThingSpeak](https://img.shields.io/badge/ThingSpeak-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-
----
-
-## 💭 How year 1 felt
-
-Starting an IT degree after civil engineering in Mongolia is... a lot.
-New country, new language (two new languages actually), new field, new everything.
-
-But honestly? The courses were engaging, the people were interesting, and building stuff that actually *works* never gets old.
-
-Year 2, let's go. 🚀
 
 ---
 
