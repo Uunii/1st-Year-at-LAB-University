@@ -79,4 +79,4 @@ The coolest part? We weren't just students showing off a project — we were the
 
 ---
 
-> 📁 Dive into [`First_half/`](./First_half) or [`Second_half/`](./Second_half) to see the actual work.
+> 📁 Dive into [`First_Half/`](./First_Half) or [`Second_Half/`](./Second_Half) to see the actual work.
