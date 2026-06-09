@@ -10,8 +10,8 @@ This repo is a snapshot of everything I did, learned, built, and survived during
 
 | Folder | Period | Vibe |
 | :--- | :--- | :--- |
-| [`First-half/`](./First-half) | Autumn 2024 | Getting settled, learning the basics |
-| [`Second-half/`](./Second-half) | Spring 2025 | Finding my feet, building real things |
+| [`First_half/`](./First_half) | Autumn 2024 | Getting settled, learning the basics |
+| [`Second-half/`](./Second_half) | Spring 2025 | Finding my feet, building real things |
 
 ---
 
@@ -79,4 +79,4 @@ The coolest part? We weren't just students showing off a project — we were the
 
 ---
 
-> 📁 Dive into [`First-half/`](./First-half) or [`Second-half/`](./Second-half) to see the actual work.
+> 📁 Dive into [`First_half/`](./First_half) or [`Second_half/`](./Second_half) to see the actual work.
