@@ -48,6 +48,28 @@ It's not pretty (it's a console app) but it works
 
 ---
 
+### 🌪️ Operation Poukama — Emergency Weather Station *(2nd half)*
+
+This one was special.
+
+Our school hosted a big event to get **high school students interested in IT**. The scenario: a fictional city called **Poukama** had just been devastated by a massive storm. Everything was down. Each team had a mission to help rebuild.
+
+**Our mission (Team 2):** Build a temporary emergency weather station to check if the city was safe to re-enter.
+
+👥 **Team 2:** Mira, Jakub, Davin & Uunii
+
+🎯 **What we actually did:**
+- Built and presented a working **Raspberry Pi Pico W** setup with real sensors
+- Taught high schoolers how to **connect wires, read sensors, and write code** — from scratch
+- Measured **temperature & humidity** (safe conditions for disaster workers)
+- Monitored **air quality & gas levels** (detecting dangerous gases post-storm)
+- Tracked **air pressure** to help forecast incoming weather threats
+- Explained what the readings actually *mean* in a real emergency context
+
+The coolest part? We weren't just students showing off a project — we were the teachers for a day. Watching high schoolers get their first sensor reading working was genuinely satisfying. 🎉
+
+---
+
 ## 🛠️ Tech touched this year
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
