@@ -11,7 +11,7 @@ This repo is a snapshot of everything I did, learned, built, and survived during
 | Folder | Period | Vibe |
 | :--- | :--- | :--- |
 | [`First_half/`](./First_half) | Autumn 2024 | Getting settled, learning the basics |
-| [`Second-half/`](./Second_half) | Spring 2025 | Finding my feet, building real things |
+| [`Second_half/`](./Second_half) | Spring 2025 | Finding my feet, building real things |
 
 ---
 
