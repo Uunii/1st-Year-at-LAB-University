@@ -54,15 +54,14 @@ External libraries:
 1. **Clone or download** the repository and open the project folder:
 
    ```bash
-   git clone https://github.com/<your-username>/<your-repository>.git
-   cd <your-repository>/motion-detector
+   git clone https://github.com/Uunii/1st-Year-at-LAB-University/edit/main/First_Half/Introduction_to_IoT_Pipeline_course/Movement_App
    ```
 
 2. **(Optional) Create a virtual environment:**
 
    ```bash
    python -m venv venv
-   source venv/bin/activate      # Windows: venv\Scripts\activate
+   venv\Scripts\activate
    ```
 
 3. **Install the dependencies:**
@@ -129,9 +128,3 @@ motion-detector/
 ├── History_C.json      # Saved Celsius results (created by the app)
 └── History_F.json      # Saved Fahrenheit results (created by the app)
 ```
-
-## Maintainer
-
-This project is maintained by **YOUR NAME** ([@your-github-username](https://github.com/your-github-username)).
-
-Questions or suggestions? Contact: `your.email@example.com`
