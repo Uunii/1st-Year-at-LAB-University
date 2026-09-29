@@ -129,3 +129,6 @@ motion-detector/
 ├── History_C.json      # Saved Celsius results (created by the app)
 └── History_F.json      # Saved Fahrenheit results (created by the app)
 ```
+## Maintainer
+
+This project is maintained by Unubold Luvsandagva ([@Uunii](https://github.com/Uunii)).
