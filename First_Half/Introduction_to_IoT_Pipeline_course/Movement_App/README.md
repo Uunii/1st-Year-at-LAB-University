@@ -1,6 +1,6 @@
-# Motion Detector (IoT_LaB)
+# Movement Application
 
-A command-line Python application that reads sensor data from an IoT device through the **ThingSpeak API**. It shows the CPU temperature and motion-detection status of a Raspberry Pi-style sensor setup as text or as graphs. The app also includes a login system, a unit converter and two small games.
+A Python application that reads sensor data from an IoT device through the **ThingSpeak API**. It shows the CPU temperature and motion-detection status of a Raspberry Pi-style sensor setup as text or as graphs. The app also includes a login system, a unit converter and two small games.
 
 ## Table of Contents
 
