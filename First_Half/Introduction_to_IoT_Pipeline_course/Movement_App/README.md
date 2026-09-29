@@ -54,7 +54,8 @@ External libraries:
 1. **Clone or download** the repository and open the project folder:
 
    ```bash
-   git clone https://github.com/Uunii/1st-Year-at-LAB-University/edit/main/First_Half/Introduction_to_IoT_Pipeline_course/Movement_App
+   git clone https://github.com/Uunii/1st-Year-at-LAB-University.git
+   cd 1st-Year-at-LAB-University/First_Half/Introduction_to_IoT_Pipeline_course/Movement_App
    ```
 
 2. **(Optional) Create a virtual environment:**
